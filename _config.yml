@@ -1,0 +1,15 @@
+# Site settings
+title: Fire-Seal LLC
+email: tdteeling@gmail.com
+description: > # website for Jamie Hadac and Fire-Seal, LLC
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fireseal-llc.com" # the base hostname & protocol for your site
+twitter_username: timteeling
+github_username:  timteeling
+
+# Build settings
+markdown: kramdown
+
+#Sass
+sass:
+    style: :compressed

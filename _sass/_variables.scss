@@ -1,0 +1,37 @@
+// Variables
+$font-body: 'Source Sans Pro', sans-serif;
+$font-heading: sans-serif;
+
+$gray: #333;
+$white: #fff;
+$red: #ed2324;
+
+$color-brand: $red;
+
+$text-color-body: $gray;
+$text-color-heading: #777;
+$text-color-link: $color-brand;
+
+
+// Mixins
+
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: 64em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 38em) { @content; }
+  }
+}
+
+%clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
