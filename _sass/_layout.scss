@@ -5,13 +5,28 @@ header[role="banner"] {
 }
 
 .logo {
-  max-width: 200px;
   display: block;
   float: left;
+  max-width: 125px;
+  @include breakpoint(small) {
+    max-width: 200px;
+  }
 }
 
 nav {
   float: right;
+  margin-top: .5em;
+  @include breakpoint(small) {
+    margin-top: 1em;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 1em;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .row {
@@ -69,4 +84,25 @@ nav {
     //padding-bottom: 56.25% //16x9
     padding-bottom: 75%;
   }
+}
+
+.btn {
+  color: $white;
+  background: $color-brand;
+  border-radius: 1em;
+  display: inline-block;
+  padding: .5em 1.25em;
+  text-decoration: none;
+  line-height: 1;
+  &:hover {
+    background: darken($text-color-link, 20%);
+    color: $white;
+  }
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,.1);
+  background: rgba(0,0,0,.05);
+  padding: 1em 0;
+  margin-top: 2em;
 }

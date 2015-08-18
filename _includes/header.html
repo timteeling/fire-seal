@@ -3,18 +3,15 @@
   <div class="container">
 
     <a class="logo" href="{{ site.baseurl }}/">
-      <img src="img/fire-seal-logo.png" alt="Fire-Seal">
+      <img src="/img/fire-seal-logo.png" alt="Fire-Seal">
     </a>
 
     <nav class="site-nav">
       <!-- <a href="#" class="menu-icon">
         Menu
       </a> -->
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+          <a class="page-link" href="/services">Services</a>
+          <a class="page-link btn" href="/contact">Contact Us</a>
     </nav>
 
   </div>

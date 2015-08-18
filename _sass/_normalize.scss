@@ -10,6 +10,7 @@ html {
   font: 112.5%/1.5 $font-body; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  color: $text-color-body;
 }
 
 /**
@@ -89,6 +90,9 @@ template {
 a {
   background-color: transparent;
   color: $text-color-link;
+  &:hover {
+    color: darken($text-color-link, 20%);
+  }
 }
 
 /**
@@ -106,6 +110,10 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+
+address {
+  line-height: 1.1;
+}
 
 abbr[title] {
   border-bottom: 1px dotted;
@@ -136,12 +144,14 @@ dfn {
 h1,
 h2,
 h3 {
- margin: 0;
- line-height: 1.1;
+  margin: 0;
+  line-height: 1.1;
+  color: $text-color-heading;
 }
 
 h1 {
   font-size: 4em;
+  margin-top: 1em;
 }
 
 h2 {
