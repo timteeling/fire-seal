@@ -150,23 +150,61 @@ h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
+  @include breakpoint(small) {
+    font-size: 4em;
+  }
   margin-top: 1em;
 }
 
 h2 {
   font-size: 2em;
-  margin-bottom: 1em;
 }
 
 h3 {
   font-size: 1.5em;
 }
 
-
-
 p {
   margin: 0 0 1.5em;
+}
+
+.mt {
+  margin-top: 1em;
+}
+
+.mb {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.2;
+  border-top: .125em solid $color-brand;
+  border-bottom: .125em solid $color-brand;
+  margin: 2em 0;
+  padding: 1em 0 1em 1em;
+  position: relative;
+}
+
+blockquote:before {
+  content: '“';
+  position: absolute;
+  top: -.0625em;
+  left: -.375em;
+  font-size: 8em;
+  font-weight: bold;
+  line-height: 1;
+  color: $color-brand;
+}
+
+cite {
+  display: block;
+  font-size: .75em;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /**

@@ -41,24 +41,32 @@ nav a {
   max-width: 50em;
 }
 
+.onehalf,
+.onethird,
+.twothirds {
+  margin-bottom: 2em;
+}
+
 
 @include breakpoint(small) {
-  .onehalf {
-    width: 47.5%;
+  .onehalf,
+  .onethird,
+  .twothirds {
+    margin-bottom: 0;
     float: left;
     margin-right: 5%;
+  }
+
+  .onehalf {
+    width: 47.5%;
   }
 
   .onethird {
     width: 30%;
-    float: left;
-    margin-right: 5%;
   }
 
   .twothirds {
     width: 65%;
-    float: left;
-    margin-right: 5%;
   }
 
   .last {
